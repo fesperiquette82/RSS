@@ -16,8 +16,12 @@ def run_seed() -> None:
     if recipes:
         db.recipes.insert_many(recipes)
 
-    db.app_state.update_one({"_id": "favorites"}, {"$setOnInsert": {"recipe_ids": []}}, upsert=True)
-    db.app_state.update_one({"_id": "shopping_list"}, {"$setOnInsert": {"items": []}}, upsert=True)
+    db.app_state.update_one(
+        {"_id": "favorites"}, {"$setOnInsert": {"recipe_ids": []}}, upsert=True
+    )
+    db.app_state.update_one(
+        {"_id": "shopping_list"}, {"$setOnInsert": {"items": []}}, upsert=True
+    )
     db.app_state.update_one(
         {"_id": "preferences"},
         {"$setOnInsert": {"language": "fr", "show_methodology_on_start": True}},
