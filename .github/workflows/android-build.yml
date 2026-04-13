@@ -36,7 +36,12 @@ jobs:
         working-directory: apps/mobile
         run: npx expo prebuild --platform android --non-interactive
 
+      - name: Force Kotlin version compatible with Compose compiler
+        run: echo "android.kotlinVersion=1.9.25" >> apps/mobile/android/gradle.properties
+
       - name: Build debug APK
+        env:
+          NODE_ENV: production
         run: |
           cd apps/mobile/android
           ./gradlew assembleDebug
