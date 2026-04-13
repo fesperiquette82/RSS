@@ -59,6 +59,8 @@ Pré-requis GitHub :
 
 Le secret `EXPO_TOKEN` est requis pour les workflows debug et release.
 
+Si `EXPO_TOKEN` est absent, les workflows Android passent en mode *skip* (warning) au lieu d'échouer.
+
 Pré-requis Expo :
 - projet Expo/EAS initialisé pour l'app mobile
 - credentials Android configurés dans Expo pour signer le build release
