@@ -1,0 +1,62 @@
+name: Build Android Release AAB
+
+on:
+  workflow_dispatch:
+
+jobs:
+  release-aab:
+    runs-on: ubuntu-latest
+    env:
+      EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Check EXPO_TOKEN availability
+        id: expo_token
+        run: |
+          if [ -z "${EXPO_TOKEN}" ]; then
+            echo "has_token=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_token=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Skip build when EXPO_TOKEN is missing
+        if: steps.expo_token.outputs.has_token != 'true'
+        run: echo "::warning::EXPO_TOKEN is not set. Skipping Android build for this run."
+
+      - name: Build Android AAB with EAS
+        if: steps.expo_token.outputs.has_token == 'true'
+        working-directory: apps/mobile
+        run: |
+          npx eas-cli@latest build --platform android --profile production --non-interactive --wait --json > build-result.json
+
+      - name: Extract EAS build id
+        if: steps.expo_token.outputs.has_token == 'true'
+        id: build_id
+        working-directory: apps/mobile
+        run: |
+          BUILD_ID=$(node -e "const fs=require('fs');const data=JSON.parse(fs.readFileSync('build-result.json','utf8'));const id=Array.isArray(data)?data[0]?.id:data?.id; if(!id){process.exit(1)}; console.log(id)")
+          echo "build_id=${BUILD_ID}" >> "$GITHUB_OUTPUT"
+
+      - name: Download built AAB
+        if: steps.expo_token.outputs.has_token == 'true'
+        working-directory: apps/mobile
+        run: |
+          npx eas-cli@latest build:download --platform android --id "${{ steps.build_id.outputs.build_id }}" --path app-release.aab --non-interactive
+
+      - name: Upload release AAB artifact
+        if: steps.expo_token.outputs.has_token == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: rss-mobile-release-aab
+          path: apps/mobile/app-release.aab
