@@ -1,0 +1,72 @@
+# RSS Monorepo (Recettes & Score Simplifié)
+
+Monorepo MVP avec :
+- **mobile** : Expo + React Native + TypeScript
+- **backend** : FastAPI + MongoDB
+
+## Prérequis
+
+- Node.js 20+
+- Python 3.11+
+- Docker + Docker Compose
+
+## Démarrage rapide
+
+### 1) Lancer le backend localement (API + MongoDB)
+
+```bash
+docker compose up --build
+```
+
+API disponible sur `http://localhost:8000`.
+
+### 2) Lancer l'application mobile
+
+```bash
+npm install
+npm run mobile:start
+```
+
+Pour ouvrir Android en local depuis Expo :
+
+```bash
+npm --workspace apps/mobile run android
+```
+
+## Build Android via fichier YAML (GitHub Actions)
+
+Le fichier `.github/workflows/android-build.yml` construit un **APK Android debug** automatiquement :
+
+- au `push` sur `main`
+- sur chaque `pull_request`
+- manuellement via `workflow_dispatch`
+
+Le workflow :
+1. installe Node.js et Java 17,
+2. installe les dépendances mobile,
+3. exécute `expo prebuild` pour générer le dossier Android,
+4. compile l'APK avec Gradle,
+5. publie l'artefact `rss-mobile-debug-apk`.
+
+## Tests
+
+### Backend
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r apps/api/requirements.txt
+pytest apps/api/tests
+```
+
+### Mobile
+
+```bash
+npm --workspace apps/mobile run test
+```
+
+## Seed de données recettes
+
+```bash
+python -m apps.api.app.seed
+```
