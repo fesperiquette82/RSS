@@ -33,7 +33,8 @@ jobs:
         uses: android-actions/setup-android@v3
 
       - name: Generate native Android project
-        run: npm --workspace apps/mobile exec expo prebuild --platform android --non-interactive
+        working-directory: apps/mobile
+        run: npx expo prebuild --platform android --non-interactive
 
       - name: Build debug APK
         run: |
