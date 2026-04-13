@@ -1,0 +1,12 @@
+{
+  "name": "rss-monorepo",
+  "private": true,
+  "workspaces": [
+    "apps/mobile",
+    "packages/*"
+  ],
+  "scripts": {
+    "mobile:start": "npm --workspace apps/mobile run start",
+    "mobile:test": "npm --workspace apps/mobile run test"
+  }
+}
