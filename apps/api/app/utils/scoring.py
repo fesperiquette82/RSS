@@ -63,13 +63,22 @@ def cadmium_score(ingredients: list[str]) -> tuple[int, str, list[str]]:
     return score, label, reasons
 
 
-def anti_inflammatory_score(ingredients: list[str], techniques: list[str]) -> tuple[int, str, list[str]]:
+def anti_inflammatory_score(
+    ingredients: list[str], techniques: list[str]
+) -> tuple[int, str, list[str]]:
     score = 50
     reasons: list[str] = []
 
     bonuses = {
         "huile d'olive": ["huile d'olive"],
-        "légumes variés": ["courgette", "carotte", "tomate", "poivron", "épinard", "brocoli"],
+        "légumes variés": [
+            "courgette",
+            "carotte",
+            "tomate",
+            "poivron",
+            "épinard",
+            "brocoli",
+        ],
         "fruits frais": ["pomme", "poire", "banane", "fruit"],
         "ail/oignon/herbes/citron": ["ail", "oignon", "persil", "herbes", "citron"],
         "poisson simple": ["cabillaud", "colin", "sardine", "thon", "poisson"],

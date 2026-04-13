@@ -13,10 +13,14 @@ class MongoDB:
     def connect(cls) -> None:
         settings = get_settings()
         try:
-            cls.client = MongoClient(settings.mongodb_url, serverSelectionTimeoutMS=1500)
+            cls.client = MongoClient(
+                settings.mongodb_url, serverSelectionTimeoutMS=1500
+            )
             cls.client.admin.command("ping")
         except PyMongoError:
-            logging.getLogger(__name__).warning("MongoDB unavailable at startup; DB routes may fail.")
+            logging.getLogger(__name__).warning(
+                "MongoDB unavailable at startup; DB routes may fail."
+            )
             cls.client = None
 
     @classmethod

@@ -27,12 +27,15 @@ def list_recipes(
         hydrated = [
             r
             for r in hydrated
-            if q_lower in r["title"].lower() or any(q_lower in i.lower() for i in r["ingredients"])
+            if q_lower in r["title"].lower()
+            or any(q_lower in i.lower() for i in r["ingredients"])
         ]
     if max_duration is not None:
         hydrated = [r for r in hydrated if r["duration_minutes"] <= max_duration]
     if min_cadmium_score is not None:
-        hydrated = [r for r in hydrated if r["cadmium_profile"]["score"] >= min_cadmium_score]
+        hydrated = [
+            r for r in hydrated if r["cadmium_profile"]["score"] >= min_cadmium_score
+        ]
 
     return {"items": hydrated, "total": len(hydrated)}
 
