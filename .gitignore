@@ -1,0 +1,32 @@
+# Node
+node_modules/
+apps/mobile/node_modules/
+
+# Expo
+.expo/
+apps/mobile/.expo/
+apps/mobile/dist/
+apps/mobile/.web-build/
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+
+# Env
+.env
+.env.*
+!.env.example
+
+# IDE
+.vscode/
+.idea/
+.DS_Store
+
+# Coverage
+coverage/
+htmlcov/
+
+# Logs
+*.log

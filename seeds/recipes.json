@@ -1,0 +1,821 @@
+[
+  {
+    "title": "Omelette tomate oignon",
+    "description": "Recette simple et pratique: omelette tomate oignon.",
+    "category": "breakfast",
+    "difficulty": "facile",
+    "duration_minutes": 20,
+    "servings": 2,
+    "budget_level": "abordable",
+    "ingredients": [
+      "oeuf",
+      "tomate",
+      "oignon",
+      "huile d'olive",
+      "persil"
+    ],
+    "steps": [
+      "Préparer les ingrédients.",
+      "Cuire ou assembler simplement.",
+      "Servir."
+    ],
+    "tags": [
+      "simple",
+      "quotidien"
+    ],
+    "techniques": [
+      "poêle simple"
+    ]
+  },
+  {
+    "title": "Poulet riz courgette",
+    "description": "Recette simple et pratique: poulet riz courgette.",
+    "category": "dinner",
+    "difficulty": "facile",
+    "duration_minutes": 30,
+    "servings": 2,
+    "budget_level": "abordable",
+    "ingredients": [
+      "poulet",
+      "riz blanc",
+      "courgette",
+      "huile d'olive",
+      "ail"
+    ],
+    "steps": [
+      "Préparer les ingrédients.",
+      "Cuire ou assembler simplement.",
+      "Servir."
+    ],
+    "tags": [
+      "simple",
+      "quotidien"
+    ],
+    "techniques": [
+      "mijoté"
+    ]
+  },
+  {
+    "title": "Cabillaud carottes riz",
+    "description": "Recette simple et pratique: cabillaud carottes riz.",
+    "category": "dinner",
+    "difficulty": "facile",
+    "duration_minutes": 25,
+    "servings": 2,
+    "budget_level": "abordable",
+    "ingredients": [
+      "cabillaud",
+      "carotte",
+      "riz blanc",
+      "citron",
+      "huile d'olive"
+    ],
+    "steps": [
+      "Préparer les ingrédients.",
+      "Cuire ou assembler simplement.",
+      "Servir."
+    ],
+    "tags": [
+      "simple",
+      "quotidien"
+    ],
+    "techniques": [
+      "four"
+    ]
+  },
+  {
+    "title": "Skyr pomme cannelle",
+    "description": "Recette simple et pratique: skyr pomme cannelle.",
+    "category": "snack",
+    "difficulty": "facile",
+    "duration_minutes": 35,
+    "servings": 2,
+    "budget_level": "abordable",
+    "ingredients": [
+      "skyr nature",
+      "pomme",
+      "cannelle"
+    ],
+    "steps": [
+      "Préparer les ingrédients.",
+      "Cuire ou assembler simplement.",
+      "Servir."
+    ],
+    "tags": [
+      "simple",
+      "quotidien"
+    ],
+    "techniques": [
+      "sans cuisson"
+    ]
+  },
+  {
+    "title": "Gratin léger de courgette",
+    "description": "Recette simple et pratique: gratin léger de courgette.",
+    "category": "dinner",
+    "difficulty": "facile",
+    "duration_minutes": 35,
+    "servings": 2,
+    "budget_level": "abordable",
+    "ingredients": [
+      "courgette",
+      "oeuf",
+      "fromage blanc",
+      "ail",
+      "herbes"
+    ],
+    "steps": [
+      "Préparer les ingrédients.",
+      "Cuire ou assembler simplement.",
+      "Servir."
+    ],
+    "tags": [
+      "simple",
+      "quotidien"
+    ],
+    "techniques": [
+      "four"
+    ]
+  },
+  {
+    "title": "Salade poulet concombre",
+    "description": "Recette simple et pratique: salade poulet concombre.",
+    "category": "lunch",
+    "difficulty": "facile",
+    "duration_minutes": 15,
+    "servings": 2,
+    "budget_level": "abordable",
+    "ingredients": [
+      "poulet",
+      "concombre",
+      "tomate",
+      "huile d'olive",
+      "citron"
+    ],
+    "steps": [
+      "Préparer les ingrédients.",
+      "Cuire ou assembler simplement.",
+      "Servir."
+    ],
+    "tags": [
+      "simple",
+      "quotidien"
+    ],
+    "techniques": [
+      "sans cuisson"
+    ]
+  },
+  {
+    "title": "Soupe carotte poireau",
+    "description": "Recette simple et pratique: soupe carotte poireau.",
+    "category": "dinner",
+    "difficulty": "facile",
+    "duration_minutes": 20,
+    "servings": 2,
+    "budget_level": "abordable",
+    "ingredients": [
+      "carotte",
+      "poireau",
+      "oignon",
+      "huile d'olive"
+    ],
+    "steps": [
+      "Préparer les ingrédients.",
+      "Cuire ou assembler simplement.",
+      "Servir."
+    ],
+    "tags": [
+      "simple",
+      "quotidien"
+    ],
+    "techniques": [
+      "mijoté"
+    ]
+  },
+  {
+    "title": "Riz sauté légumes poulet",
+    "description": "Recette simple et pratique: riz sauté légumes poulet.",
+    "category": "lunch",
+    "difficulty": "facile",
+    "duration_minutes": 20,
+    "servings": 2,
+    "budget_level": "abordable",
+    "ingredients": [
+      "riz blanc",
+      "poulet",
+      "carotte",
+      "courgette",
+      "oignon"
+    ],
+    "steps": [
+      "Préparer les ingrédients.",
+      "Cuire ou assembler simplement.",
+      "Servir."
+    ],
+    "tags": [
+      "simple",
+      "quotidien"
+    ],
+    "techniques": [
+      "poêle simple"
+    ]
+  },
+  {
+    "title": "Yaourt poire vanille",
+    "description": "Recette simple et pratique: yaourt poire vanille.",
+    "category": "breakfast",
+    "difficulty": "facile",
+    "duration_minutes": 30,
+    "servings": 2,
+    "budget_level": "abordable",
+    "ingredients": [
+      "yaourt nature",
+      "poire",
+      "vanille"
+    ],
+    "steps": [
+      "Préparer les ingrédients.",
+      "Cuire ou assembler simplement.",
+      "Servir."
+    ],
+    "tags": [
+      "simple",
+      "quotidien"
+    ],
+    "techniques": [
+      "sans cuisson"
+    ]
+  },
+  {
+    "title": "Wrap poulet crudités",
+    "description": "Recette simple et pratique: wrap poulet crudités.",
+    "category": "lunch",
+    "difficulty": "facile",
+    "duration_minutes": 15,
+    "servings": 2,
+    "budget_level": "abordable",
+    "ingredients": [
+      "galette blé",
+      "poulet",
+      "laitue",
+      "tomate",
+      "yaourt nature"
+    ],
+    "steps": [
+      "Préparer les ingrédients.",
+      "Cuire ou assembler simplement.",
+      "Servir."
+    ],
+    "tags": [
+      "simple",
+      "quotidien"
+    ],
+    "techniques": [
+      "assemblage"
+    ]
+  },
+  {
+    "title": "Poisson citron herbes",
+    "description": "Recette simple et pratique: poisson citron herbes.",
+    "category": "dinner",
+    "difficulty": "facile",
+    "duration_minutes": 35,
+    "servings": 2,
+    "budget_level": "abordable",
+    "ingredients": [
+      "colin",
+      "citron",
+      "herbes",
+      "huile d'olive",
+      "carotte"
+    ],
+    "steps": [
+      "Préparer les ingrédients.",
+      "Cuire ou assembler simplement.",
+      "Servir."
+    ],
+    "tags": [
+      "simple",
+      "quotidien"
+    ],
+    "techniques": [
+      "four"
+    ]
+  },
+  {
+    "title": "Bol fromage blanc fruits",
+    "description": "Recette simple et pratique: bol fromage blanc fruits.",
+    "category": "breakfast",
+    "difficulty": "facile",
+    "duration_minutes": 30,
+    "servings": 2,
+    "budget_level": "abordable",
+    "ingredients": [
+      "fromage blanc",
+      "banane",
+      "pomme",
+      "cannelle"
+    ],
+    "steps": [
+      "Préparer les ingrédients.",
+      "Cuire ou assembler simplement.",
+      "Servir."
+    ],
+    "tags": [
+      "simple",
+      "quotidien"
+    ],
+    "techniques": [
+      "sans cuisson"
+    ]
+  },
+  {
+    "title": "Oeufs brouillés épinards",
+    "description": "Recette simple et pratique: oeufs brouillés épinards.",
+    "category": "breakfast",
+    "difficulty": "facile",
+    "duration_minutes": 30,
+    "servings": 2,
+    "budget_level": "abordable",
+    "ingredients": [
+      "oeuf",
+      "épinard",
+      "oignon",
+      "huile d'olive"
+    ],
+    "steps": [
+      "Préparer les ingrédients.",
+      "Cuire ou assembler simplement.",
+      "Servir."
+    ],
+    "tags": [
+      "simple",
+      "quotidien"
+    ],
+    "techniques": [
+      "poêle simple"
+    ]
+  },
+  {
+    "title": "Pâtes tomate basilic poulet",
+    "description": "Recette simple et pratique: pâtes tomate basilic poulet.",
+    "category": "dinner",
+    "difficulty": "facile",
+    "duration_minutes": 35,
+    "servings": 2,
+    "budget_level": "abordable",
+    "ingredients": [
+      "pâtes blanches",
+      "tomate",
+      "basilic",
+      "poulet",
+      "huile d'olive"
+    ],
+    "steps": [
+      "Préparer les ingrédients.",
+      "Cuire ou assembler simplement.",
+      "Servir."
+    ],
+    "tags": [
+      "simple",
+      "quotidien"
+    ],
+    "techniques": [
+      "mijoté"
+    ]
+  },
+  {
+    "title": "Poêlée courgette carotte oeuf",
+    "description": "Recette simple et pratique: poêlée courgette carotte oeuf.",
+    "category": "lunch",
+    "difficulty": "facile",
+    "duration_minutes": 25,
+    "servings": 2,
+    "budget_level": "abordable",
+    "ingredients": [
+      "courgette",
+      "carotte",
+      "oeuf",
+      "oignon",
+      "huile d'olive"
+    ],
+    "steps": [
+      "Préparer les ingrédients.",
+      "Cuire ou assembler simplement.",
+      "Servir."
+    ],
+    "tags": [
+      "simple",
+      "quotidien"
+    ],
+    "techniques": [
+      "poêle simple"
+    ]
+  },
+  {
+    "title": "Sandwich dinde crudités",
+    "description": "Recette simple et pratique: sandwich dinde crudités.",
+    "category": "lunch",
+    "difficulty": "facile",
+    "duration_minutes": 10,
+    "servings": 2,
+    "budget_level": "abordable",
+    "ingredients": [
+      "pain blanc",
+      "dinde",
+      "tomate",
+      "concombre",
+      "fromage blanc"
+    ],
+    "steps": [
+      "Préparer les ingrédients.",
+      "Cuire ou assembler simplement.",
+      "Servir."
+    ],
+    "tags": [
+      "simple",
+      "quotidien"
+    ],
+    "techniques": [
+      "assemblage"
+    ]
+  },
+  {
+    "title": "Salade riz thon citron",
+    "description": "Recette simple et pratique: salade riz thon citron.",
+    "category": "lunch",
+    "difficulty": "facile",
+    "duration_minutes": 35,
+    "servings": 2,
+    "budget_level": "abordable",
+    "ingredients": [
+      "riz blanc",
+      "thon",
+      "tomate",
+      "citron",
+      "huile d'olive"
+    ],
+    "steps": [
+      "Préparer les ingrédients.",
+      "Cuire ou assembler simplement.",
+      "Servir."
+    ],
+    "tags": [
+      "simple",
+      "quotidien"
+    ],
+    "techniques": [
+      "assemblage"
+    ]
+  },
+  {
+    "title": "Compote pomme maison",
+    "description": "Recette simple et pratique: compote pomme maison.",
+    "category": "snack",
+    "difficulty": "facile",
+    "duration_minutes": 10,
+    "servings": 2,
+    "budget_level": "abordable",
+    "ingredients": [
+      "pomme",
+      "cannelle",
+      "eau"
+    ],
+    "steps": [
+      "Préparer les ingrédients.",
+      "Cuire ou assembler simplement.",
+      "Servir."
+    ],
+    "tags": [
+      "simple",
+      "quotidien"
+    ],
+    "techniques": [
+      "mijoté"
+    ]
+  },
+  {
+    "title": "Poulet au four et haricots verts",
+    "description": "Recette simple et pratique: poulet au four et haricots verts.",
+    "category": "dinner",
+    "difficulty": "facile",
+    "duration_minutes": 25,
+    "servings": 2,
+    "budget_level": "abordable",
+    "ingredients": [
+      "poulet",
+      "haricots verts",
+      "ail",
+      "huile d'olive"
+    ],
+    "steps": [
+      "Préparer les ingrédients.",
+      "Cuire ou assembler simplement.",
+      "Servir."
+    ],
+    "tags": [
+      "simple",
+      "quotidien"
+    ],
+    "techniques": [
+      "four"
+    ]
+  },
+  {
+    "title": "Omelette fines herbes",
+    "description": "Recette simple et pratique: omelette fines herbes.",
+    "category": "breakfast",
+    "difficulty": "facile",
+    "duration_minutes": 15,
+    "servings": 2,
+    "budget_level": "abordable",
+    "ingredients": [
+      "oeuf",
+      "herbes",
+      "oignon",
+      "huile d'olive"
+    ],
+    "steps": [
+      "Préparer les ingrédients.",
+      "Cuire ou assembler simplement.",
+      "Servir."
+    ],
+    "tags": [
+      "simple",
+      "quotidien"
+    ],
+    "techniques": [
+      "poêle simple"
+    ]
+  },
+  {
+    "title": "Bowl yaourt banane",
+    "description": "Recette simple et pratique: bowl yaourt banane.",
+    "category": "snack",
+    "difficulty": "facile",
+    "duration_minutes": 25,
+    "servings": 2,
+    "budget_level": "abordable",
+    "ingredients": [
+      "yaourt nature",
+      "banane",
+      "cannelle"
+    ],
+    "steps": [
+      "Préparer les ingrédients.",
+      "Cuire ou assembler simplement.",
+      "Servir."
+    ],
+    "tags": [
+      "simple",
+      "quotidien"
+    ],
+    "techniques": [
+      "sans cuisson"
+    ]
+  },
+  {
+    "title": "Carottes râpées citron",
+    "description": "Recette simple et pratique: carottes râpées citron.",
+    "category": "lunch",
+    "difficulty": "facile",
+    "duration_minutes": 10,
+    "servings": 2,
+    "budget_level": "abordable",
+    "ingredients": [
+      "carotte",
+      "citron",
+      "huile d'olive",
+      "persil"
+    ],
+    "steps": [
+      "Préparer les ingrédients.",
+      "Cuire ou assembler simplement.",
+      "Servir."
+    ],
+    "tags": [
+      "simple",
+      "quotidien"
+    ],
+    "techniques": [
+      "assemblage"
+    ]
+  },
+  {
+    "title": "Poisson vapeur courgette",
+    "description": "Recette simple et pratique: poisson vapeur courgette.",
+    "category": "dinner",
+    "difficulty": "facile",
+    "duration_minutes": 20,
+    "servings": 2,
+    "budget_level": "abordable",
+    "ingredients": [
+      "cabillaud",
+      "courgette",
+      "citron",
+      "herbes"
+    ],
+    "steps": [
+      "Préparer les ingrédients.",
+      "Cuire ou assembler simplement.",
+      "Servir."
+    ],
+    "tags": [
+      "simple",
+      "quotidien"
+    ],
+    "techniques": [
+      "vapeur"
+    ]
+  },
+  {
+    "title": "Dinde poêlée tomate",
+    "description": "Recette simple et pratique: dinde poêlée tomate.",
+    "category": "dinner",
+    "difficulty": "facile",
+    "duration_minutes": 15,
+    "servings": 2,
+    "budget_level": "abordable",
+    "ingredients": [
+      "dinde",
+      "tomate",
+      "oignon",
+      "huile d'olive"
+    ],
+    "steps": [
+      "Préparer les ingrédients.",
+      "Cuire ou assembler simplement.",
+      "Servir."
+    ],
+    "tags": [
+      "simple",
+      "quotidien"
+    ],
+    "techniques": [
+      "poêle simple"
+    ]
+  },
+  {
+    "title": "Salade fruits frais",
+    "description": "Recette simple et pratique: salade fruits frais.",
+    "category": "snack",
+    "difficulty": "facile",
+    "duration_minutes": 30,
+    "servings": 2,
+    "budget_level": "abordable",
+    "ingredients": [
+      "pomme",
+      "poire",
+      "banane",
+      "citron"
+    ],
+    "steps": [
+      "Préparer les ingrédients.",
+      "Cuire ou assembler simplement.",
+      "Servir."
+    ],
+    "tags": [
+      "simple",
+      "quotidien"
+    ],
+    "techniques": [
+      "sans cuisson"
+    ]
+  },
+  {
+    "title": "Riz aux légumes doux",
+    "description": "Recette simple et pratique: riz aux légumes doux.",
+    "category": "lunch",
+    "difficulty": "facile",
+    "duration_minutes": 20,
+    "servings": 2,
+    "budget_level": "abordable",
+    "ingredients": [
+      "riz blanc",
+      "carotte",
+      "courgette",
+      "huile d'olive"
+    ],
+    "steps": [
+      "Préparer les ingrédients.",
+      "Cuire ou assembler simplement.",
+      "Servir."
+    ],
+    "tags": [
+      "simple",
+      "quotidien"
+    ],
+    "techniques": [
+      "mijoté"
+    ]
+  },
+  {
+    "title": "Soupe courgette pomme de terre",
+    "description": "Recette simple et pratique: soupe courgette pomme de terre.",
+    "category": "dinner",
+    "difficulty": "facile",
+    "duration_minutes": 35,
+    "servings": 2,
+    "budget_level": "abordable",
+    "ingredients": [
+      "courgette",
+      "pomme de terre",
+      "oignon",
+      "huile d'olive"
+    ],
+    "steps": [
+      "Préparer les ingrédients.",
+      "Cuire ou assembler simplement.",
+      "Servir."
+    ],
+    "tags": [
+      "simple",
+      "quotidien"
+    ],
+    "techniques": [
+      "mijoté"
+    ]
+  },
+  {
+    "title": "Toast oeuf tomate",
+    "description": "Recette simple et pratique: toast oeuf tomate.",
+    "category": "breakfast",
+    "difficulty": "facile",
+    "duration_minutes": 30,
+    "servings": 2,
+    "budget_level": "abordable",
+    "ingredients": [
+      "pain blanc",
+      "oeuf",
+      "tomate",
+      "huile d'olive"
+    ],
+    "steps": [
+      "Préparer les ingrédients.",
+      "Cuire ou assembler simplement.",
+      "Servir."
+    ],
+    "tags": [
+      "simple",
+      "quotidien"
+    ],
+    "techniques": [
+      "poêle simple"
+    ]
+  },
+  {
+    "title": "Pâtes thon citron",
+    "description": "Recette simple et pratique: pâtes thon citron.",
+    "category": "dinner",
+    "difficulty": "facile",
+    "duration_minutes": 20,
+    "servings": 2,
+    "budget_level": "abordable",
+    "ingredients": [
+      "pâtes blanches",
+      "thon",
+      "citron",
+      "persil",
+      "huile d'olive"
+    ],
+    "steps": [
+      "Préparer les ingrédients.",
+      "Cuire ou assembler simplement.",
+      "Servir."
+    ],
+    "tags": [
+      "simple",
+      "quotidien"
+    ],
+    "techniques": [
+      "mijoté"
+    ]
+  },
+  {
+    "title": "Skyr poire flocons d'avoine",
+    "description": "Recette simple et pratique: skyr poire flocons d'avoine.",
+    "category": "breakfast",
+    "difficulty": "facile",
+    "duration_minutes": 10,
+    "servings": 2,
+    "budget_level": "abordable",
+    "ingredients": [
+      "skyr nature",
+      "poire",
+      "flocons d'avoine",
+      "cannelle"
+    ],
+    "steps": [
+      "Préparer les ingrédients.",
+      "Cuire ou assembler simplement.",
+      "Servir."
+    ],
+    "tags": [
+      "simple",
+      "quotidien"
+    ],
+    "techniques": [
+      "sans cuisson"
+    ]
+  }
+]
