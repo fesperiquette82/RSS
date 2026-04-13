@@ -1,0 +1,45 @@
+name: Build Android Release AAB
+
+on:
+  workflow_dispatch:
+
+jobs:
+  release-aab:
+    runs-on: ubuntu-latest
+    env:
+      EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build Android AAB with EAS
+        working-directory: apps/mobile
+        run: |
+          npx eas-cli@latest build --platform android --profile production --non-interactive --wait --json > build-result.json
+
+      - name: Extract EAS build id
+        id: build_id
+        working-directory: apps/mobile
+        run: |
+          BUILD_ID=$(node -e "const fs=require('fs');const data=JSON.parse(fs.readFileSync('build-result.json','utf8'));const id=Array.isArray(data)?data[0]?.id:data?.id; if(!id){process.exit(1)}; console.log(id)")
+          echo "build_id=${BUILD_ID}" >> "$GITHUB_OUTPUT"
+
+      - name: Download built AAB
+        working-directory: apps/mobile
+        run: |
+          npx eas-cli@latest build:download --platform android --id "${{ steps.build_id.outputs.build_id }}" --path app-release.aab --non-interactive
+
+      - name: Upload release AAB artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: rss-mobile-release-aab
+          path: apps/mobile/app-release.aab

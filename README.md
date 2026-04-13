@@ -35,6 +35,8 @@ npm --workspace apps/mobile run android
 
 ## Build Android via fichier YAML (GitHub Actions)
 
+### Debug APK
+
 Le fichier `.github/workflows/android-build.yml` construit un **APK Android debug** automatiquement :
 
 - au `push` sur `main`
@@ -47,6 +49,17 @@ Le workflow :
 3. exécute `expo prebuild` pour générer le dossier Android,
 4. compile l'APK avec Gradle,
 5. publie l'artefact `rss-mobile-debug-apk`.
+
+### Release AAB (Play Console)
+
+Le fichier `.github/workflows/android-release.yml` construit un **AAB release** à la demande (`workflow_dispatch`) via **EAS Build** et publie l’artefact `rss-mobile-release-aab`.
+
+Pré-requis GitHub :
+- définir le secret repository `EXPO_TOKEN` (token Expo/EAS avec droits de build)
+
+Pré-requis Expo :
+- projet Expo/EAS initialisé pour l'app mobile
+- credentials Android configurés dans Expo pour signer le build release
 
 ## Tests
 
