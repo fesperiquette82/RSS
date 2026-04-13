@@ -37,17 +37,17 @@ npm --workspace apps/mobile run android
 
 ### Debug APK
 
-Le fichier `.github/workflows/android-build.yml` construit un **APK Android debug** automatiquement :
+Le fichier `.github/workflows/android-build.yml` construit un **APK Android (profil EAS preview)** automatiquement :
 
 - au `push` sur `main`
 - sur chaque `pull_request`
 - manuellement via `workflow_dispatch`
 
 Le workflow :
-1. installe Node.js et Java 17,
+1. installe Node.js,
 2. installe les dépendances mobile,
-3. exécute `expo prebuild` pour générer le dossier Android,
-4. compile l'APK avec Gradle,
+3. lance `eas build` avec le profil `preview`,
+4. télécharge l'APK généré,
 5. publie l'artefact `rss-mobile-debug-apk`.
 
 ### Release AAB (Play Console)
@@ -56,6 +56,8 @@ Le fichier `.github/workflows/android-release.yml` construit un **AAB release** 
 
 Pré-requis GitHub :
 - définir le secret repository `EXPO_TOKEN` (token Expo/EAS avec droits de build)
+
+Le secret `EXPO_TOKEN` est requis pour les workflows debug et release.
 
 Pré-requis Expo :
 - projet Expo/EAS initialisé pour l'app mobile

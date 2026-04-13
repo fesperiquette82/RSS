@@ -10,6 +10,8 @@ on:
 jobs:
   build-android:
     runs-on: ubuntu-latest
+    env:
+      EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
 
     steps:
       - name: Checkout repository
@@ -23,33 +25,25 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Setup Java
-        uses: actions/setup-java@v4
-        with:
-          distribution: temurin
-          java-version: 17
-
-      - name: Install Android SDK
-        uses: android-actions/setup-android@v3
-
-      - name: Generate native Android project
+      - name: Build Android APK with EAS preview profile
         working-directory: apps/mobile
-        run: npx expo prebuild --platform android --non-interactive
-
-      - name: Force Kotlin 1.9.25 across generated Android files
         run: |
-          echo "android.kotlinVersion=1.9.25" >> apps/mobile/android/gradle.properties
-          rg -l "1\.9\.24" apps/mobile/android | xargs -r sed -i "s/1\.9\.24/1.9.25/g"
+          npx eas-cli@latest build --platform android --profile preview --non-interactive --wait --json > build-result.json
 
-      - name: Build debug APK
-        env:
-          NODE_ENV: production
+      - name: Extract EAS build id
+        id: build_id
+        working-directory: apps/mobile
         run: |
-          cd apps/mobile/android
-          ./gradlew assembleDebug
+          BUILD_ID=$(node -e "const fs=require('fs');const data=JSON.parse(fs.readFileSync('build-result.json','utf8'));const id=Array.isArray(data)?data[0]?.id:data?.id; if(!id){process.exit(1)}; console.log(id)")
+          echo "build_id=${BUILD_ID}" >> "$GITHUB_OUTPUT"
+
+      - name: Download built APK
+        working-directory: apps/mobile
+        run: |
+          npx eas-cli@latest build:download --platform android --id "${{ steps.build_id.outputs.build_id }}" --path app-preview.apk --non-interactive
 
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4
         with:
           name: rss-mobile-debug-apk
-          path: apps/mobile/android/app/build/outputs/apk/debug/app-debug.apk
+          path: apps/mobile/app-preview.apk
