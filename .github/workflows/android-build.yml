@@ -10,9 +10,6 @@ on:
 jobs:
   build-android:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: apps/mobile
 
     steps:
       - name: Checkout repository
@@ -22,10 +19,9 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: npm
 
       - name: Install dependencies
-        run: npm ci
+        run: npm install
 
       - name: Setup Java
         uses: actions/setup-java@v4
@@ -37,11 +33,11 @@ jobs:
         uses: android-actions/setup-android@v3
 
       - name: Generate native Android project
-        run: npx expo prebuild --platform android --non-interactive
+        run: npm --workspace apps/mobile exec expo prebuild --platform android --non-interactive
 
       - name: Build debug APK
         run: |
-          cd android
+          cd apps/mobile/android
           ./gradlew assembleDebug
 
       - name: Upload APK artifact
